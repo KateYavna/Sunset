@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGrass"
+        android:layout_width="408dp"
+        android:layout_height="392dp"
+        android:background="@drawable/grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBush4"
+            android:layout_width="90dp"
+            android:layout_height="161dp"
+            android:layout_marginStart="345dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="61dp"
+            android:alpha="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bush" />
+
+        <ImageView
+            android:id="@+id/ivBush5"
+            android:layout_width="106dp"
+            android:layout_height="176dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="72dp"
+            android:alpha="0.7"
+            android:rotation="-66"
+            android:rotationX="-12"
+            android:rotationY="-33"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/bush" />
+
+        <ImageView
+            android:id="@+id/ivBush6"
+            android:layout_width="163dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginLeft="272dp"
+            android:alpha="0.6"
+            android:rotation="-4"
+            android:rotationX="46"
+            android:rotationY="-174"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/bush" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSky"
+        android:layout_width="412dp"
+        android:layout_height="417dp"
+        android:background="@drawable/sky"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvSun"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="348dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginRight="152dp"
+            android:background="@drawable/sun"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCloud1"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="52dp"
+            android:alpha="0.5"
+            android:background="@drawable/cloud"
+            android:rotation="-25"
+            android:rotationX="41"
+            android:rotationY="166"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCloud2"
+            android:layout_width="167dp"
+            android:layout_height="80dp"
+            android:alpha="0.5"
+            android:background="@drawable/cloud"
+            android:rotation="25"
+            android:rotationY="8"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/tvCloud1"
+            app:layout_constraintEnd_toEndOf="@+id/tvCloud1" />
+
+        <TextView
+            android:id="@+id/tvCloud3"
+            android:layout_width="85dp"
+            android:layout_height="143dp"
+            android:layout_marginBottom="4dp"
+            android:alpha="0.4"
+            android:background="@drawable/cloud"
+            android:rotation="-4"
+            android:rotationX="29"
+            android:rotationY="33"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/tvCloud1"
+            app:layout_constraintEnd_toEndOf="@+id/tvCloud1" />
+
+        <TextView
+            android:id="@+id/tvCloud4"
+            android:layout_width="95dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="7dp"
+            android:alpha="0.3"
+            android:background="@drawable/cloud"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/tvCloud1"
+            app:layout_constraintStart_toStartOf="@+id/tvCloud3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBush"
+            android:layout_width="116dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="268dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBush1"
+                android:layout_width="33dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="76dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bush" />
+
+            <ImageView
+                android:id="@+id/ivBush2"
+                android:layout_width="22dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="52dp"
+                app:layout_constraintStart_toEndOf="@+id/ivBush1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bush" />
+
+            <ImageView
+                android:id="@+id/ivBush3"
+                android:layout_width="59dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="42dp"
+                app:layout_constraintStart_toStartOf="@+id/ivBush1"
+                app:layout_constraintTop_toTopOf="@+id/ivBush2"
+                app:srcCompat="@drawable/bush" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
